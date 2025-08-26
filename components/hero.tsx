@@ -7,20 +7,25 @@ export function Hero() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/dark-moody-metal-band-performing-on-stage-with-dra.png')`,
-        }}
+        style={{backgroundColor: '#000'}}
+        // style={{
+        //   backgroundImage: `url('/dark-moody-metal-band-performing-on-stage-with-dra.png')`,
+        // }}
       >
         <div className="absolute inset-0 bg-background/70" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">Hevorah</h1>
+        {/* <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">Hevorah</h1> */}
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
+          <img className="h-3/6 object-cover" src="../logos/hevorah-main-logo.png" alt="" />
 
-        <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
+        </h1>
+
+        {/* <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
           Heavy riffs. Atmospheric synths. Progressive metal that pushes boundaries.
-        </p>
+        </p> */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Play className="mr-2 h-5 w-5" />
